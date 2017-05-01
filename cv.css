@@ -1,0 +1,235 @@
+/**
+ *    CSS for the work-experience/CV part of my personal website
+ *
+ *    Author: Ben Clark - Mar. 2017
+ **/
+
+#cv {
+    display: block;
+    position: relative;
+    float: none;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 80px 0 100px 0;
+    background: #eeeeee;
+    overflow: default;
+}
+
+
+#cv-content {
+    display: block;
+    position: relative;
+    width: 80%;
+    margin: 0 10% 0 10%;
+    height: auto;
+    padding: 0;
+    overflow: default;
+}
+
+#cv-content h1 {
+    font-size: 1.5em;
+    font-family: "Merriweather", serif;
+}
+
+#contact {
+    display: block;
+    position: relative;
+    float: none;
+    width: 90%;
+    margin: 35px 5% 25px 5%;
+    padding: 0;
+    text-align: center;
+}
+
+#contact a {
+    margin-left: 2em;
+    color: #555555;
+    border-bottom: thin solid #bbbbbb;
+}
+
+.cv-section h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 2em;
+    letter-spacing: 0.1em;
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-transform: none;
+}
+
+
+h1#cv-title {
+    display: block;
+    position: relative;
+    width: 100%;
+    margin: 80px 0 0 0;
+    font-size: 4em;
+    text-align: center;
+}
+
+#cv-contact {
+    display: block;
+    position: relative;
+    width: 100%;
+    padding: 0;
+    margin: 0px 0 2em 0;
+    padding-bottom: 2em;
+    text-align: center;
+    border-bottom: thin solid #eeeeee;
+    color: #999999;
+    letter-spacing: 0.05em;
+    word-spacing: 0.5em;
+}
+
+#cv-contact p {
+    width: 100%;
+    margin: 1em 0 0 0;
+}
+
+#cv-mission {
+    display: block;
+    position: relative;
+    float: none;
+    clear: both;
+    width: 40%;
+    margin: 0 0 0 30%;
+    font-size: 11pt;
+    text-align: center;
+    color: #454545;
+}
+
+#cv-mission p {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    text-indent: none;
+}
+
+@media (min-width: 800px) {
+    #cv-content {
+        height: 1600px;
+    }
+
+    #cv-left-column {
+        display: block;
+        position: relative;
+        float: left;
+        width: 25%;
+        margin: 0px 0 0 0;
+        padding: 0;
+    }
+
+    #cv-right-column {
+        display: block;
+        position: relative;
+        float: right;
+        width: 72%;
+        margin: 0 0 4em 3%;
+        padding: 0;
+    }
+    
+    #cv-spacer {
+        display: block;
+        position: relative;
+        float: right;
+        width: 0px;
+        height: 0px;
+        margin: 0;
+    }
+}
+
+
+
+
+    
+#cv-spacer {
+    display: block;
+    position: relative;
+    float: none;
+    width: 100%;
+    height: 80px;
+}
+
+.cv-section {
+    display: block;
+    position: relative;
+    float: none;
+    clear: both;
+    width: 100%;
+    margin: 0 0 15px 0;
+}
+
+.cv-section ul {
+    width: 100%;
+    margin: 0.2em 0 0.2em 0;
+    padding-left: 1em;
+    line-height: 1.5em;
+}
+
+.cv-section p {
+    width: 100%;
+    margin: 1em 0 1em 0;
+}
+
+
+
+
+#cv-education {
+    margin-top: 0px;
+}
+
+#cv-education h1 {
+    margin: 0 0 -0em 0;
+}
+
+#cv-coursework h1 {
+    margin: 2.5em 0 -0.1em 0;
+}
+
+#cv-skills h1 {
+    margin: 2.5em 0 0.5em 0;
+}
+
+#cv-skills strong {
+    display: block;
+    position: relative;
+    margin: 1em 0 0em 0;
+}
+
+#cv-experience h1 {
+    margin: 0 0 -1em 0;
+    text-align: center;
+}
+
+#cv-experience p {
+    display: block;
+    position: relative;
+    float: none;
+    clear: both;
+    margin: 0em 0 0em 0;
+    text-indent: 2em;
+}
+
+#cv-experience strong {
+    display: block;
+    position: relative;
+    float: left;
+    margin: 3em 0 1em 0;
+}
+
+#cv-experience i.date {
+    display: block;
+    position: relative;
+    float: right;
+    margin : 2.3em 0 0.1em 0;
+}
+
+#cv-experience i {
+    margin : 0.1em 0 0.1em 0;
+}
+
+#cv-awards h1 {
+    margin: 2.5em 0 1em 0;
+    text-align: center;
+}

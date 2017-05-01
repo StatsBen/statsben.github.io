@@ -1,0 +1,61 @@
+/*
+ * Stylesheet for the homepage of BenjaminDavidClark.com
+ * 
+ * Author: Ben Clark - Apr. 2017
+ *
+ */
+
+
+
+/******************************
+      GENERAL STYLES
+*******************************/
+
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-size: 11pt;
+    font-family: "Muli", sans-serif;
+    background: #333333;
+}
+
+h1 {
+    font-family: "Merriweather", serif;
+}
+
+h2 {
+    
+}
+
+h3 {
+    
+}
+
+p {
+    color: #707070;
+}
+
+strong {
+    color: #444444;
+    font-weight: 900;
+}
+
+a {
+    color: #707070;
+    text-decoration: none;
+}
+
+a:hover {
+    
+}
+
+ul {
+    color: #707070;
+}

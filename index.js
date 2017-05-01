@@ -12,10 +12,10 @@
  **/
 $(document).ready(function(){
     
-    initializeNavBar();
-    initializeScrolling();
-    initializeWorksElements();
-    initializeBackgroundAndAccents();
+    //initializeNavBar();
+    //initializeScrolling();
+    //initializeWorksElements();
+    //initializeBackgroundAndAccents();
     
 });
 

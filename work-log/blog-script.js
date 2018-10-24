@@ -21,6 +21,8 @@ function initializePosts() {
     
     var updatedPosts = new Array();
     
+    console.log('how many posts are there? : ' + n);
+    
     for (i=0; i<n; i++) {
         
         // Add the 'read more' button'
@@ -75,7 +77,7 @@ function initializePosts() {
 
 function expand(e) { 
     // Select the relevent text element
-    var spotID = e.id.charAt(1) + e.id.charAt(2);
+    var spotID = e.id.charAt(1) + e.id.charAt(2) + e.id.charAt(3);
     var relevantTextID = '#entry-text-' + spotID;
     
     // Open it up
@@ -99,7 +101,7 @@ function expand(e) {
 
 function closeEntry(e) {
     // Select the relevent text element
-    var spotID = e.id.charAt(1) + e.id.charAt(2);
+    var spotID = e.id.charAt(1) + e.id.charAt(2) + e.id.charAt(3);
     var relevantTextID = '#entry-text-' + spotID;
     
     // collapse the element

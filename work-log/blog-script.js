@@ -83,7 +83,8 @@ function expand(e) {
     // Open it up
     $(relevantTextID).addClass('active-entry-text');
     $(relevantTextID).removeClass('entry-text');
-    $(relevantTextID).animate({height: '8em'}, 200);
+    $(relevantTextID).animate({'min-height': '8em'}, 200);
+    $(relevantTextID).animate({'height': '8em'}, 200);
     
     // Add the 'close' button
     e.innerHTML = 'close';
@@ -107,7 +108,8 @@ function closeEntry(e) {
     // collapse the element
     $(relevantTextID).addClass('entry-text');
     $(relevantTextID).removeClass('active-entry-text');
-    $(relevantTextID).animate({height: '0.95em'}, 200);
+    $(relevantTextID).animate({'height': '0.95em'}, 200);
+    $(relevantTextID).animate({'min-height': '0'}, 200);
     
     // return the 'read more' button
     e.innerHTML = 'read more...';

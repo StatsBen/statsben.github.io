@@ -128,7 +128,7 @@ h1#cv-title {
         margin: 0 0 4em 3%;
         padding: 0;
     }
-    
+
     #cv-spacer {
         display: block;
         position: relative;
@@ -142,7 +142,7 @@ h1#cv-title {
 
 
 
-    
+
 #cv-spacer {
     display: block;
     position: relative;
@@ -227,6 +227,10 @@ h1#cv-title {
 
 #cv-experience i {
     margin : 0.1em 0 0.1em 0;
+}
+
+#cv-awards {
+    margin-bottom: 20px;
 }
 
 #cv-awards h1 {

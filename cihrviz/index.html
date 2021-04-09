@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="author" content="Ben Clark" />
+        <meta name="description" content="A small visualization of the distribution of CIHR funding over the last 5 years" />
+        <link rel="stylesheet" href="vis.css" />
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,700|Merriweather" rel="stylesheet">
+        <script src="https://www.gstatic.com/firebasejs/3.7.5/firebase.js"></script>
+        <script src="vis.js"></script>
+        <title>5 Years of CIHR</title>
+    </head>
+    <body>
+        <img style="display:none;" src="assets/funding-2012.jpeg" />
+        <img style="display:none;" src="assets/funding-2013.jpeg" />
+        <img style="display:none;" src="assets/funding-2014.jpeg" />
+        <img style="display:none;" src="assets/funding-2015.jpeg" />
+        <img style="display:none;" src="assets/funding-2016.jpeg" />
+        <img style="display:none;" src="assets/change-2012.jpeg" />
+        <img style="display:none;" src="assets/change-2013.jpeg" />
+        <img style="display:none;" src="assets/change-2014.jpeg" />
+        <img style="display:none;" src="assets/change-2015.jpeg" />
+        
+        
+        <div id="header">
+            <h1>5 Years of CIHR Funding</h1>
+            <p>This interactive visualization depicts the amount of CIHR funding awarded to each Canadian province over the last 5 fiscal years.</p>
+            <p>The total dollar value of the funding alloted to each province is normalized by population, and expressed in CAD.</p>
+            <p>This visualization was created for a group of researchers at the Michael Smith Foundation, and is intended to be viewed on a full screen, which you may do <a href="http://cihrproject.benjamindavidclark.com" target="_blank">here</a>. For more information about the Canadian Institute for Health Research (CIHR), click <a href="http://www.cihr-irsc.gc.ca/e/193.html" target="_blank">here</a>.</p>
+        </div>
+        
+        <div id="vis-container">
+            <div id="control-panel">
+                <div id="buttons">
+                    <div id="normalization-buttons">
+                        <p id="norm-buttons-cheat">View: <a class="active">change over time</a> <a>funding by year</a></p>
+                    </div>
+                    <div id="select-year-buttons">
+                        <p id="year-buttons-cheat">Year: 
+                            <a class="active">2012/13</a>
+                            <a>2013/14</a>
+                            <a>2014/15</a>
+                            <a>2015/16</a>
+                            <a>2016/17</a>
+                        </p>
+                    </div>
+                </div>
+                <div id="legend">
+                    <img class="legend-image" src="assets/legend2.jpg" />
+                </div>
+            </div>
+            
+            <div id="map">
+            </div>
+            
+            
+            
+            <div id="detail-funding" class="detail" >
+                <div class="histogram">
+                    <img class="histo" alt="CIHR Funding by Province" src="assets/plot1.jpg" />
+                </div>
+                <div class="description">
+                    <p>The map above depicts the per-capita CIHR funding allotted to each Canadian province in each of the last 5 fiscal years. </p>
+                    <p>This map is drawn at a scale of roughly <i>1:20,000,000</i>, but this value changes depending on the size of your browser window.</p>
+                    <p>The bar chart at left shows the total value of CIHR funding allotted to each of the 5 highest winning provinces. The value is summed over the last 5 fiscal years.</p>
+                    <p>The data used in this visualization comes from the Canadian Institutes of Health Research (CIHR). The dataset can be found <a href="http://webapps.cihr-irsc.gc.ca/funding/Search?p_language=E&p_version=CIHR" target="_blank">here</a>.</p>
+                </div>
+            </div>
+            
+            
+            <div id="detail-change" class="detail">
+                <div class="histogram">
+                    <img class="histo" alt="CIHR Funding by Year" src="assets/plot2.jpg" />
+                </div>
+                <div class="description">
+                    <p>The map above depicts the change in per-capita funding allotted to each province by year. So the color of each province is determined by (value<sub>t</sub> - value<sub>t-1</sub>) where "value<sub>t</sub>" is the per capita funding allotted in year "t".</p>
+                    <p>This map is drawn at a scale of roughly <i>1:20,000,000</i>, but this changes depending on the size of your  browser window.</p>
+                    <p>The bar chart at left shows the total value of CIHR funding allotted in each of the 5 relevant fiscal years.</p>
+                    <p>The data used in this visualization comes from the Canadian Institutes of Health Research (CIHR). The dataset can be found <a href="http://webapps.cihr-irsc.gc.ca/funding/Search?p_language=E&p_version=CIHR" target="_blank">here</a>.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div id="footer">
+            <p>Website by Ben Clark, 2017 &mdash; benjamindavidclark.com</p>
+        </div>
+        
+    </body>
+</html>

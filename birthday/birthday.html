@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="author" content="Ben Clark" />
+        <meta name="description" content="The plan for Jess' crazy awesome 25th birthday! :D" />
+        <link rel="stylesheet" href="party.css" />
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,700|Merriweather" rel="stylesheet">
+        <script src="https://www.gstatic.com/firebasejs/3.7.5/firebase.js"></script>
+        <script src="party.js"></script>
+        <title>Jess Turns 25</title>
+        
+        
+    <!--
+      _________ _______  _______  _______      
+      \__    _/(  ____ \(  ____ \(  ____ \     
+         )  (  | (    \/| (    \/| (    \/     
+         |  |  | (__    | (_____ | (_____      
+         |  |  |  __)   (_____  )(_____  )     
+         |  |  | (            ) |      ) |     
+      |\_)  )  | (____/\/\____) |/\____) |     
+      (____/   (_______/\_______)\_______)     
+                                               
+_________          _______  _        _______   
+\__   __/|\     /|(  ____ )( (    /|(  ____ \  
+   ) (   | )   ( || (    )||  \  ( || (    \/  
+   | |   | |   | || (____)||   \ | || (_____   
+   | |   | |   | ||     __)| (\ \) |(_____  )  
+   | |   | |   | || (\ (   | | \   |      ) |  
+   | |   | (___) || ) \ \__| )  \  |/\____) |  
+   )_(   (_______)|/   \__/|/    )_)\_______)  
+                                               
+             _______  _______  _               
+            / ___   )(  ____ \( )              
+            \/   )  || (    \/| |              
+                /   )| (____  | |              
+              _/   / (_____ \ | |              
+             /   _/        ) )(_)              
+            (   (__/\/\____) ) _               
+            \_______/\______/ (_)              
+
+
+    Website by Ben Clark - April, 2017  ;) 
+                                               
+-->
+        
+        
+        <style type="text/css">
+            #description {
+                display: block;
+                position: relative;
+                float: none;
+                width: 100%;
+                height: auto;
+                margin: 0;
+                padding: 150px 0 150px 0;
+                font-size: 1.2em;
+                text-align: center;
+                background: #23455b;
+            }
+            #description p {
+                display: block;
+                position: relative;
+                width: 50%;
+                margin: 0 25% 0 25%;
+                color: #AADDFF;
+            }
+            #description p a {
+                color: #AADDFF;
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <div id="menu">
+            <ul>
+                <li><a href="#who">Who</a></li>
+                <li><a href="#what">What</a></li>
+                <li><a href="#where">Where</a></li>
+                <li><a href="#rsvp">RSVP</a></li>
+            </ul>
+            <p id="countdown"></p>
+        </div>
+        
+        <div id="description">
+            <p>In the spring of 2017, I organized a surprise birthday party for my girlfriend, Jess. To help organize the event, I created this website. Scroll down to see a preview of it, or you can still view it live at <a href="http://www.jessturns25.party" target="_blank">jessturns25.party</a>.</p>
+        </div>
+        
+        <div id="display">
+            <div id="display-title">
+                <h1>Jess is Turning 25!</h1>
+            </div>
+            <div id="display-images">
+            </div>
+        </div>
+        
+        <div id="content">
+            <h2>The Plan</h2>
+            <p>On April 29th, 2017, the wonderful and glorious Jess Landing is turning 25. To commemorate this occasion, let's all work together to make a grand and embarrassing surprise party!</p>
+            <p>Just to reiterate, this is a <strong>surprise</strong> party. DO NOT tell Jess that this is happening!</p>
+            <p>I know it's long, but please read this invite explaining the event and RSVP with the form below. I look forward to seeing you there!</p>
+            
+            
+            <h2 id="who" style="margin-top: 150px;">Who's Involved?</h2>
+            <p>This event is being organized by me, Ben Clark. Throughout the planning of this event, please feel free to get in touch with me via:</p>
+            <ul>
+                <li><strong>email:</strong> ben.clark456@gmail.com</li>
+                <li><strong>phone:</strong> (604)-440-9511 (call/text)</li>
+                <li><strong>facebook:</strong> ben.clark456</li>
+            </ul>
+            <p>Currently, I have 19 people confirmed for the event, so we'll be a pretty large group! As we get closer to the date, I'll begin putting fellow party-goers in touch with each other as needed.</p>
+            
+            
+            <h2 id="what">What's Going On?</h2>
+            <h3>Outline of the Day</h3>
+            <p>I will tell Jess that we're going for a leisurely hike, just the two of us. This is a total lie, however, because you all will have the pleasure of surprising her along the way with fun and goofy challenges! After Jess finishes one of your challenges, you will join our ever-growing caravan, and we'll slowly meander to the Third Summit of the Stawamus Chief in Squamish where we'll have a fun and low-key party 'til sunset.</p>
+            <h3>The Competition</h3>
+            <p>So the goal of this whole competition is to show Jess a good time and make her birthday fun! Please keep this in mind when planning your challenge. This fun can be type 1 or type 2, but please refrain from planning anything <i>too</i> scarring. The rules of this competition won't be followed too strictly, so if there are any parts of the plan you don't agree with just shoot me a message and we can find a solution together :)</p>
+            <p>With that in mind, here's how this'll work:</p>
+            <p><strong>Step 1: Make teams of 2 to 5 people.</strong> This whole plan will be the most fun if all the party-goers work together in teams. Please feel free to select friends to team up with, or if you want to meet new people that's great too! If you don't see anyone you know on the guestlist, let me know and I can set you up with a welcoming team. Ideally we don't form any groups of more than 5 people (or we will have too few groups).</p>
+            <p><strong>Step 2: Make a silly challenge for Jess.</strong> These challenges will be planned and executed by you and your team. Plan something that will be just as fun for Jess to do as it is for you to watch! It could involve ridiculous costumes, loud singing, high-angle adventure, or really almost anything else! For ideas: Jess loves soccer, rock climbing, tv, food, and animals. The crazier the better!</p>
+            <p><strong>Step 3: After you execute your challenge, join the caravan.</strong> We'll follow Jess through the rest of her challenges in a group of ever increasing size and silliness.</p>
+            <p><strong>4. Attend the Awards Ceremony!</strong> Our rag-tag band of silly people will journey up to the summit of the Third Peak where we'll eat some food and determine the winners. The awards categories will be: </p>
+            <ul>
+                <li>Most Awkward Challenge</li>
+                <li>Most Fun Challenge</li>
+                <li>Most Weird/Ridiculous Challenge</li>
+                <li>Funniest Challenge</li>
+            </ul>
+            <p>At this point, we will all eat whatever food we've brough and hang out to watch a bit of the sunset in good company atop the Chief :)</p>
+            <h3>The After Party</h3>
+            <p>I'm currently trying to find a campground that will host our group for some drinks and campfire-timez after the day's adventure. If you know of a place we can go, let me know! A legal campsite with firepit will be ideal since the evening will almost certainly involve some alcoholic beverages.</p>
+            <p>Stay tuned for details...</p>
+            
+            
+            
+            
+            <h2 id="where">Where is This Happening?</h2>
+            <h3>Plan A:</h3>
+            <p>Ideally, this will be happening along the trail to the summit of the Stawamus Chief in Squamish! We will hike up the regular path to the First Summit, and then traverse the Second Summit to the Third via the fun, little "via ferrata" climbers' path descending the Raven's Castle on the First Summit. The following image shows the intended route with some possible "challenge station" locations. These marked locations are just suggestions, and if you have a better spot in mind that isn't on this map let me know!</p>
+            <p>Note some of the abbreviations in the map: "North-North" refers to the North-North Gully overlook, and "Boulder" refers to the Boulder Overlook along the Stawamus Chief trail.</p>
+            <img src="assets/route-map1.jpg" style="width: 95%; margin: 30px 2.5% 20px 2.5%;" />
+            <h3>Plan B:</h3>
+            <p>In the event that it's stormy on April 29th, we'll mix things up and host the challenges at a variety of more sheltered locations in and around Squamish! These backup locations are Galileo Coffee Company, Fergie's Cafe, Paradise Valley bouldering area, Mag's 99, and Ground-Up Rock Climbing Gym. In this case, the bulk of the party and awards will happen at Ground Up, and we would ideally end the day at one of the superb breweries in town :)</p>
+            
+            
+           
+            <br />&nbsp;<br />
+            <br />&nbsp;<br />
+            <br />&nbsp;<br />
+            <br />&nbsp;<br />
+            <br />&nbsp;<br />
+            <br />&nbsp;<br />
+            <br />&nbsp;<br />
+            <br />&nbsp;<br />
+            <br />&nbsp;<br />
+            <br />&nbsp;<br />
+        </div>
+        
+        
+    </body>
+</html>

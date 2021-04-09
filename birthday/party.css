@@ -1,0 +1,224 @@
+/*
+      _________ _______  _______  _______      
+      \__    _/(  ____ \(  ____ \(  ____ \     
+         )  (  | (    \/| (    \/| (    \/     
+         |  |  | (__    | (_____ | (_____      
+         |  |  |  __)   (_____  )(_____  )     
+         |  |  | (            ) |      ) |     
+      |\_)  )  | (____/\/\____) |/\____) |     
+      (____/   (_______/\_______)\_______)     
+                                               
+_________          _______  _        _______   
+\__   __/|\     /|(  ____ )( (    /|(  ____ \  
+   ) (   | )   ( || (    )||  \  ( || (    \/  
+   | |   | |   | || (____)||   \ | || (_____   
+   | |   | |   | ||     __)| (\ \) |(_____  )  
+   | |   | |   | || (\ (   | | \   |      ) |  
+   | |   | (___) || ) \ \__| )  \  |/\____) |  
+   )_(   (_______)|/   \__/|/    )_)\_______)  
+                                               
+             _______  _______  _               
+            / ___   )(  ____ \( )              
+            \/   )  || (    \/| |              
+                /   )| (____  | |              
+              _/   / (_____ \ | |              
+             /   _/        ) )(_)              
+            (   (__/\/\____) ) _               
+            \_______/\______/ (_)              
+
+
+    Website by Ben Clark - April, 2017  ;) 
+
+ */
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Muli", sans-serif;
+    font-size: 12pt;
+    background: #eeeeee;
+}
+
+h2 {
+    width: 100%;
+    padding-top: 120px;
+    font-family: "Merriweather", serif;
+    font-size: 2em;
+    color: #334472;
+    text-align: center;
+}
+
+h3 {
+    width: 60%;
+    margin: 50px 0 0 20%;
+    color: #555555;
+    font-family: "Merriweather", serif;
+    font-size: 1.2em;
+    font-weight: 900;
+    font-style: italic;
+    letter-spacing: 0.02em;
+}
+
+p {
+    padding: 0.8em 0 0 0;
+    color: #777777;
+    text-indent: 2em;
+}
+
+@media (max-width: 1000px) {
+    p {
+        width: 80%;
+        margin: 0 10% 0 10%;
+    }
+}
+
+@media (min-width: 1000px) {
+    p {
+        width: 60%;
+        margin: 0 20% 0 20%;
+    }
+}
+
+ul {
+    width: 50%;
+    margin: 1em 25% 1em 25%;
+    color: #777777;
+}
+
+strong {
+    color: #555555;
+}
+
+a {
+    color: #555555;
+    
+}
+
+#menu {
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    font-family: "Merriweather", serif;
+    background: #333333;
+    z-index: 9;
+    overflow: hidden;
+}
+
+#menu ul {
+    display: block;
+    position: relative;
+    float: left;
+    margin: 0;
+    padding: 0;
+    color: #FFFFFF;
+}
+
+#menu ul li {
+    display: block;
+    position: relative;
+    float: left;
+    width: auto;
+    margin: 10px 0 0 20px;
+    padding: 5px;
+}
+
+#menu ul li a {
+    color: #AADDFF;
+    text-decoration: none;
+    cursor: pointer;
+    -webkit-user-select: none; /* Chrome/Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+ */
+}
+
+p#countdown {
+    display: block;
+    position: relative;
+    float: right;
+    width: auto;
+    margin: 15px 50px 0 0;
+    padding: 0;
+    color: #AADDFF;
+    text-transform: capitalize;
+    -webkit-user-select: none; /* Chrome/Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+ */
+}
+
+#display {
+    display: block;
+    position: relative;
+    float: none;
+    width: 100%;
+    height: auto;
+}
+
+#display-title {
+    display: block;
+    position: relative;
+    float: none;
+    width: 100%;
+}
+
+#display-title h1 {
+    width: 100%;
+    margin: 0;
+    padding: 100px 0 25px 0;
+    text-align: center;
+    font-family: "Merriweather", serif;
+    font-size: 4em;
+    color: #555555;
+}
+
+#display-images {
+    display: block;
+    position: relative;
+    float: none;
+    width: 50%;
+    margin: 0 25% 120px 25%;
+    overflow: auto;
+}
+
+
+img.derp-face {
+    display: block;
+    position: relative;
+    float: left;
+}
+
+@media (max-width: 600px) {
+    img.derp-face {
+        width: 100%;
+        margin: 50px 0 0 0;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1000px){
+    img.derp-face {
+        width: 48%;
+        margin: 10px 0 0 2%;
+    }
+}
+
+@media (min-width: 1000px) {
+    img.derp-face {
+        width: 30%;
+        margin: 10px 0 0 3%;
+    }
+}
+
+#content {
+    display: block;
+    position: relative;
+    float: none;
+    width: 100%;
+    margin: 80px 0 0 0;
+}
